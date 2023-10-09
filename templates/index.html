@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Twitter Sentimental Analysis - Trace for Best</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+        $( function() {
+        $( "#datepicker1" ).datepicker();
+        } );
+    </script>
+
+    <script>
+        $( function() {
+        $( "#datepicker2" ).datepicker();
+        } );
+    </script>
+
+<!-- 
+Letter Template 
+http://www.templatemo.com/tm-510-letter
+-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+  <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../static/style.css">
+	<link rel="stylesheet" href="../static/css/demo.css" />
+  <link rel="stylesheet" href="../static/css/templatemo-style.css">
+  
+  <script type="text/javascript" src="../static/js/modernizr.custom.86080.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	</head>
+
+	<body>
+
+			<div id="particles-js"></div>
+		
+			<ul class="cb-slideshow">
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	        </ul>
+
+			<div class="container-fluid">
+				<div class="row cb-slideshow-text-container ">
+					<div class= "tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
+					<header class="mb-5"><h1>Search your Tweets</h1></header>
+					<P class="mb-5">Search tweets by hashtags between days and get tweets with location. Stay anonymous. Thanks and visit our site again..</P>
+					
+                    <form action="http://localhost:5000/home/get_tweets" method="POST" class="subscribe-form">
+						<div class="row form-section">
+
+							<div class="col-md-7 col-sm-7 col-xs-7">
+			                      <input  type="text" name="tweet" class="form-control" id="text" placeholder="Hashtag" required/>
+								<br>
+			                      <input  type="text" name="fromdate" class="form-control" id="datepicker1" placeholder="From Date" required/>
+			                    <br>
+								<input  type="text" name="todate" class="form-control" id="datepicker2" placeholder="To Date" required/>
+								<br>
+				  				<div class="col-md-5 col-sm-5 col-xs-5">
+								<button type="submit" class="tm-btn-submit">Submit</button>
+							</div>
+						</div>
+                    </form>
+						<!--<form action="#" autocomplete="off"></form>-->
+                    
+					<!--<div class="tm-social-icons-container text-xs-center">-->
+	                    <!--<a href="#" class="tm-social-link"><i class="fa fa-facebook"></i></a>-->
+	                    <!--<a href="#" class="tm-social-link"><i class="fa fa-google-plus"></i></a>-->
+	                    <!--<a href="#" class="tm-social-link"><i class="fa fa-twitter"></i></a>-->
+	                    <!--<a href="#" class="tm-social-link"><i class="fa fa-linkedin"></i></a>-->
+	                <!--</div>-->
+
+					</div>
+				</div>	
+				<div class="footer-link">
+					<p>Copyright © 2023 Farhan Ahmed
+                    
+                    - Design: <a rel="nofollow" href="https://linkedin.com/in/itsfarhan" target="_parent">Farhan</a></p>
+				</div>
+			</div>	
+	</body>
+
+	<script type="text/javascript" src="../static/js/particles.js"></script>
+	<script type="text/javascript" src="../static/js/app.js"></script>
+</html>

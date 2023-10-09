@@ -1,0 +1,339 @@
+body{
+     margin: 0;
+    padding: 0;
+    background: url(tweet.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.tweetbox{
+  width: 600px;
+height: 400px;
+background: #000;
+    opacity: 0.7;
+color: #fff;
+top: 50%;
+left: 50%;
+position: absolute;
+transform: translate(-50%, -50%);
+box-sizing: border-box;
+padding: 10px 70px;
+
+}
+}
+h1{
+margin: 0;
+padding: 0 0 20px;
+text-align: inherit;
+font-size: 22px;
+
+}
+
+.tweetbox p{
+margin: 0;
+padding: 0;
+font-weight: bold;
+}
+
+.tweetbox input{
+ width: 100%;
+ margin-bottom: 20px;
+
+}
+
+.tweetbox input[type="text"], input[type="text"], input[type="text"]
+{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.tweetbox input[type="submit"]
+{
+border: none;
+outline: none;
+height: 40px;
+background: #fb2525;
+color: #fff;
+font-size: 18px;
+border-radius: 20px;
+}
+
+.tweetbox input[type="submit"]:hover
+{
+cursor: pointer;
+background: ##ffc107;
+color: #000;
+}
+
+.tweetbox a{
+text-decoration: none;
+font-size: 12px;
+line-height: 20px;
+color: darkgrey;
+}
+
+.tweetbox a:hover
+{
+ color: #ffc107;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
