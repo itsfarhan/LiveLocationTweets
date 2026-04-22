@@ -2,7 +2,7 @@
 
 **Map the World's Sentiment in Real-Time.**
 
-TweetSentinel is a luxury, dark-themed OSINT tool that analyzes the collective mood of the planet. By harnessing the power of the Twitter API and TextBlob AI, it scrapes geolocated tweets, scores their sentiment, and plots them on an interactive, high-fidelity world map.
+TweetSentinel is a tool that analyzes the collective mood of the planet. By harnessing the power of the Twitter API and TextBlob AI, it scrapes geolocated tweets, scores their sentiment, and plots them on an interactive, high-fidelity world map.
 
 ![TweetSentinel Homepage](static/img/mockup_home.png)
 
