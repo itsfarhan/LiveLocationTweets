@@ -71,4 +71,3 @@ The map uses a clear color-coded system to represent public mood:
 ---
 
 **Designed & Developed by [Farhan Ahmed](https://linkedin.com/in/itsfarhan)**
-*Luxury UI Redesign by Antigravity*
