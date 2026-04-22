@@ -10,8 +10,6 @@ TweetSentinel is a tool that analyzes the collective mood of the planet. By harn
 
 - 🧠 **AI-Powered Sentiment Analysis**: Leverages TextBlob to classify tweets into Positive, Neutral, or Negative.
 - 📍 **Precision Geo-Mapping**: Plots tweets based on precise GPS coordinates or user-profile locations.
-- 🗺️ **Interactive HUD**: A full-screen dark map experience with a floating glassmorphism dashboard.
-- 💎 **Luxury Design System**: Built with a 21st.dev-inspired dark aesthetic, featuring ambient glows, dot grids, and frosted glass components.
 - ⚡ **Real-Time Visualization**: Watch public opinion light up across the globe as data is fetched.
 
 ## 🛠️ Tech Stack
@@ -20,7 +18,7 @@ TweetSentinel is a tool that analyzes the collective mood of the planet. By harn
 - **Analysis**: TextBlob (Natural Language Processing)
 - **Mapping**: Folium, Leaflet.js, CartoDB Dark Matter
 - **API**: Tweepy (X/Twitter API)
-- **Frontend**: Vanilla HTML5, CSS3 (Modern Glassmorphism), ES6 Javascript
+- **Frontend**: Vanilla HTML5, CSS3, ES6 Javascript
 
 ## 🚀 Getting Started
 
