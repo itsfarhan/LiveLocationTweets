@@ -1,48 +1,74 @@
-# Sentiment Analysis Twitter Map
+# 🛰️ TweetSentinel
 
-This Python application allows you to perform sentiment analysis on tweets and visualize the results on a map. The application uses the Twitter API to search for tweets based on a specific keyword or phrase and analyzes the sentiment of these tweets using TextBlob. The sentiment analysis results are then displayed on a map using the Folium library.
+**Map the World's Sentiment in Real-Time.**
 
-## Prerequisites
+TweetSentinel is a luxury, dark-themed OSINT tool that analyzes the collective mood of the planet. By harnessing the power of the Twitter API and TextBlob AI, it scrapes geolocated tweets, scores their sentiment, and plots them on an interactive, high-fidelity world map.
 
-Before running the application, make sure you have the following libraries installed:
+![TweetSentinel Homepage](static/img/mockup_home.png)
 
-- `re`
-- `traceback`
-- `folium`
-- `geocoder`
-- `tweepy`
-- `flask`
-- `textblob`
-- `datetime`
+## ✨ Features
 
-You can install these libraries using the following command:
+- 🧠 **AI-Powered Sentiment Analysis**: Leverages TextBlob to classify tweets into Positive, Neutral, or Negative.
+- 📍 **Precision Geo-Mapping**: Plots tweets based on precise GPS coordinates or user-profile locations.
+- 🗺️ **Interactive HUD**: A full-screen dark map experience with a floating glassmorphism dashboard.
+- 💎 **Luxury Design System**: Built with a 21st.dev-inspired dark aesthetic, featuring ambient glows, dot grids, and frosted glass components.
+- ⚡ **Real-Time Visualization**: Watch public opinion light up across the globe as data is fetched.
 
+## 🛠️ Tech Stack
+
+- **Backend**: Python, Flask
+- **Analysis**: TextBlob (Natural Language Processing)
+- **Mapping**: Folium, Leaflet.js, CartoDB Dark Matter
+- **API**: Tweepy (X/Twitter API)
+- **Frontend**: Vanilla HTML5, CSS3 (Modern Glassmorphism), ES6 Javascript
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+Ensure you have Python 3.12+ installed.
+
+### 2. Installation
+Clone the repository and set up a virtual environment:
+
+```bash
+# Create virtual environment
+python3 -m venv .venv
+
+# Activate (bash/zsh)
+source .venv/bin/activate
+
+# Install dependencies
+pip install flask textblob folium tweepy geocoder
 ```
-pip install re traceback folium geocoder tweepy flask textblob datetime
+
+### 3. Configuration
+Open `app.py` and insert your Twitter/X API credentials:
+
+```python
+CONSUMER_KEY        = 'YOUR_KEY'
+CONSUMER_SECRET     = 'YOUR_SECRET'
+ACCESS_TOKEN        = 'YOUR_TOKEN'
+ACCESS_TOKEN_SECRET = 'YOUR_TOKEN_SECRET'
 ```
 
-## Configuration
+### 4. Launch
+```bash
+python app.py
+```
+Visit `http://localhost:5000` to start mapping.
 
-Before using the application, you need to configure your Twitter API credentials. Replace the following variables in the code with your Twitter API credentials:
+## 📸 Interface Preview
 
-- `CONSUMER_KEY`: Your Twitter API consumer key
-- `CONSUMER_SECRET`: Your Twitter API consumer secret
-- `ACCESS_TOKEN`: Your Twitter API access token
-- `ACCESS_TOKEN_SECRET`: Your Twitter API access token secret
+![Map Result Screen](static/img/mockup_map.png)
 
-## Running the Application
+## ⚖️ Sentiment Scoring
 
-To run the application, execute the `app.py` file. The application will start a Flask server and you can access it in your web browser at `http://localhost:5000`.
+The map uses a clear color-coded system to represent public mood:
+- 🟢 **Green**: Positive sentiment
+- ⚫ **Gray**: Neutral / Objective information
+- 🔴 **Red**: Negative sentiment
 
-## How to Use
+---
 
-1. Access the application in your web browser.
-2. Enter a keyword or phrase in the search box.
-3. Select the start and end dates for the tweets you want to analyze.
-4. Click the "Search" button to initiate the search and sentiment analysis process.
-5. The application will plot the tweets on the map based on their sentiment. Green markers represent positive sentiment, red markers represent negative sentiment, and black markers represent neutral sentiment.
-
-## Notes
-
-- Tweets with geolocation information will be plotted based on their coordinates.
-- Tweets without geolocation information will be plotted based on the location mentioned in the user's profile. If no location is found, these tweets will be skipped.
+**Designed & Developed by [Farhan Ahmed](https://linkedin.com/in/itsfarhan)**
+*Luxury UI Redesign by Antigravity*
