@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#{{ query }} — TweetSentinel Results</title>
+  <meta name="description" content="Geo-sentiment results for #{{ query }} from {{ from_date }} to {{ to_date }}.">
+  <meta name="theme-color" content="#03030a">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body class="result-page">
+
+  <!-- ── Floating header bar ──────────────────────────────────── -->
+  <header class="result-header" id="result-header">
+
+    <a href="/" class="back-btn" id="back-btn">
+      ← Back
+    </a>
+
+    <div class="header-divider"></div>
+
+    <span class="result-query">#{{ query }}</span>
+    <span class="result-dates">{{ from_date }} → {{ to_date }}</span>
+
+    {% if stats.total > 0 %}
+      <div class="header-divider"></div>
+
+      <span class="stat-badge positive">
+        <span class="stat-dot"></span>
+        {{ stats.positive }}
+      </span>
+
+      <span class="stat-badge neutral">
+        <span class="stat-dot"></span>
+        {{ stats.neutral }}
+      </span>
+
+      <span class="stat-badge negative">
+        <span class="stat-dot"></span>
+        {{ stats.negative }}
+      </span>
+    {% endif %}
+
+  </header>
+
+  <!-- ── Full-screen Folium map ────────────────────────────────── -->
+  <iframe
+    class="map-iframe"
+    src="{{ url_for('static', filename='sentiment_map.html') }}"
+    title="Sentiment Map for #{{ query }}"
+    loading="lazy"
+    allowfullscreen
+  ></iframe>
+
+  <!-- ── Legend card ───────────────────────────────────────────── -->
+  <aside class="legend-card" aria-label="Sentiment legend">
+    <p class="legend-title">Sentiment Legend</p>
+
+    <div class="legend-item">
+      <span class="legend-dot positive"></span>
+      Positive tweet
+    </div>
+    <div class="legend-item">
+      <span class="legend-dot neutral"></span>
+      Neutral tweet
+    </div>
+    <div class="legend-item">
+      <span class="legend-dot negative"></span>
+      Negative tweet
+    </div>
+
+    {% if stats.total > 0 %}
+      <div class="legend-divider"></div>
+      <p class="legend-total">
+        <strong>{{ stats.total }}</strong> tweets mapped
+      </p>
+    {% endif %}
+  </aside>
+
+  <!-- ── No results notice ─────────────────────────────────────── -->
+  {% if stats.total == 0 %}
+    <div class="no-results" role="alert">
+      ⚠ No geolocated tweets found — try a broader date range or different hashtag.
+    </div>
+  {% endif %}
+
+</body>
+</html>
